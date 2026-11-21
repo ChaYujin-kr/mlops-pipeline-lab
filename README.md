@@ -3,17 +3,17 @@
 《Design a Machine Learning System (From Scratch)》 7~11장 실습 코드.
 객체 탐지(YOLOv8)와 영화 추천 파이프라인을 노트북 한 대의 kind 클러스터(Kubeflow Pipelines, MinIO, MLflow)에서 돌렸다.
 
-과정과 결과는 블로그 시리즈에 있다: [ML 파이프라인 실습 (7~11장)](https://chayujin-kr.github.io/posts/mlops-lab-00-overview/)
+과정과 결과는 블로그 [MLOps 실습 시리즈](https://chayujin-kr.github.io/posts/mlops-lab-00-overview/) 11~16편에 있다. 1~10편(6–7장 드리프트)의 코드는 [mlops-drift-drill](https://github.com/ChaYujin-kr/mlops-drift-drill)이다.
 
 ## 구성
 
 | 폴더 | 내용 | 글 |
 |---|---|---|
-| `ch07/` | 농담 파이프라인(파라미터·아티팩트 전달), 탐지 데이터 준비 | [1편](https://chayujin-kr.github.io/posts/mlops-lab-01-kfp-data-passing/) |
-| `ch08/` | YOLO 학습·검증 파이프라인(원본 / 수정본), 로컬 비교 실험 3개 | [2편](https://chayujin-kr.github.io/posts/mlops-lab-02-yolo-training-pipeline/) |
-| `ch09/` | 탐지 모델 BentoML 서빙 | [3편](https://chayujin-kr.github.io/posts/mlops-lab-03-yolo-bentoml-serving/) |
-| `ch10/` | 추천 데이터 준비, 학습·검증·등록 파이프라인 | [4편](https://chayujin-kr.github.io/posts/mlops-lab-04-recommender-pipeline/) |
-| `ch11/` | 추천 서빙, 드리프트 대조 실험, 설명 가능성(EMF) | [5편](https://chayujin-kr.github.io/posts/mlops-lab-05-serving-drift-explain/) |
+| `ch07/` | 농담 파이프라인(파라미터·아티팩트 전달), 탐지 데이터 준비 | [12편](https://chayujin-kr.github.io/posts/mlops-lab-01-kfp-data-passing/) |
+| `ch08/` | YOLO 학습·검증 파이프라인(원본 / 수정본), 로컬 비교 실험 3개 | [13편](https://chayujin-kr.github.io/posts/mlops-lab-02-yolo-training-pipeline/) |
+| `ch09/` | 탐지 모델 BentoML 서빙 | [14편](https://chayujin-kr.github.io/posts/mlops-lab-03-yolo-bentoml-serving/) |
+| `ch10/` | 추천 데이터 준비, 학습·검증·등록 파이프라인 | [15편](https://chayujin-kr.github.io/posts/mlops-lab-04-recommender-pipeline/) |
+| `ch11/` | 추천 서빙, 드리프트 대조 실험, 설명 가능성(EMF) | [16편](https://chayujin-kr.github.io/posts/mlops-lab-05-serving-drift-explain/) |
 | `submit.py` | 컴파일된 파이프라인을 KFP에 제출하고 끝날 때까지 대기 | |
 
 책 코드에서 바꾼 곳에는 `# 변경:` 주석을 달았다. `ch08/01_train_original.py`는 비교용으로 둔 원본이고 그대로는 실패한다.
